@@ -1,10 +1,9 @@
-(ns clojure-bus.memory-bus
+(ns clojure-bus.memory.memory-bus
   (:require [manifold.stream :as s :refer [consume]]
             [manifold.bus :as b]
-            [clojure-bus.log :as log]
-            [clojure-bus.domain :refer [EventBus
-                                      publish!
-                                      subscribe]]))
+
+            [clojure-bus.utils.log :as log]
+            [clojure-bus.bus :refer [EventBus publish! subscribe]]))
 
 (def DEFAULT_STREAM_BUFFER 2048)
 

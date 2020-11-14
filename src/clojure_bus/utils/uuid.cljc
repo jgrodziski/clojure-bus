@@ -1,4 +1,4 @@
-(ns clojure-bus.uuid
+(ns clojure-bus.utils.uuid
   #?(:cljs (:require [cljs-uuid-utils.core :as uuid]))
   #?(:clj (:import (java.util UUID))))
 

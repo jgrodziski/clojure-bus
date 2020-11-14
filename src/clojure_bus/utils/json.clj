@@ -1,8 +1,8 @@
-(ns clojure-bus.json
+(ns clojure-bus.utils.json
   (:require [cheshire.generate :as generate]
             [jsonista.core :as jsonista]
 
-            [clojure-bus.uuid :as uuid]
+            [clojure-bus.utils.uuid :as uuid]
             )
   (:import [java.time Instant LocalDate LocalDateTime ZonedDateTime ZoneId]
            [com.fasterxml.jackson.core JsonGenerator]))

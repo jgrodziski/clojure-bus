@@ -1,4 +1,4 @@
-(ns clojure-bus.kafka
+(ns clojure-bus.kafka.kafka
   (:require [clojure.java.io :as io :refer [input-stream]]
             [jsonista.core :as json]
             [byte-streams :refer [bytes=]]
@@ -6,9 +6,9 @@
             [jackdaw.serdes.json :as jsj]
             [jackdaw.streams :as js]
 
-            [clojure-bus.log :refer [info debug]]
-            [clojure-bus.json]                     ;require the cheshire json encoder for java.time
-            [clojure-bus.transit :as transit])
+            [clojure-bus.utils.log :refer [info debug]]
+            [clojure-bus.utils.json]                     ;require the cheshire json encoder for java.time
+            [clojure-bus.utils.transit :as transit])
   (:import (java.nio.charset StandardCharsets)
            (org.apache.kafka.common.serialization Serdes)
            (org.apache.kafka.common.utils Bytes)))

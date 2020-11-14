@@ -1,4 +1,4 @@
-(ns clojure-bus.transit
+(ns clojure-bus.utils.transit
   "these transit write and read handler deals with common types we found in transit data, notably dates types"
   (:require [cognitect.transit :as transit])
   (:import [java.io ByteArrayOutputStream ByteArrayInputStream]

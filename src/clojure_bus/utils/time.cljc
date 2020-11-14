@@ -1,4 +1,4 @@
-(ns clojure-bus.time
+(ns clojure-bus.utils.time
   "Time handling.
   The application uses the tick library to manipulate time. This library is built upon java-time classes (and uses cljc
   compatible version on the frontend)."

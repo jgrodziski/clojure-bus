@@ -1,7 +1,7 @@
-(ns clojure-bus.multicast-bus
+(ns clojure-bus.multicast.multicast-bus
   (:require [clojure.core.async :as async :refer [chan mult tap <! >! go go-loop]]
 
-            [clojure-bus.log :as log :refer [info debug]]
+            [clojure-bus.utils.log :as log :refer [info debug]]
             [clojure-bus.bus :refer [EventBus publish! subscribe]]))
 
 (def DEFAULT_CHAN_BUFFER_SIZE 16)
