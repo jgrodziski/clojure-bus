@@ -1,0 +1,31 @@
+{:paths     ["resources" "src"]
+ :mvn/repos {"confluent" {:url "https://packages.confluent.io/maven/"}}
+ :deps      {org.clojure/clojure                       {:mvn/version "1.10.1"}
+             clojure.java-time/clojure.java-time       {:mvn/version "0.3.2"}
+             com.cognitect/transit-clj                 {:mvn/version "0.8.313"}
+
+             tick/tick                                 {:mvn/version "0.4.27-alpha"}
+
+
+             cheshire/cheshire                         {:mvn/version "5.8.1"}
+             metosin/jsonista                          {:mvn/version "0.2.4"}
+
+             org.apache.kafka/kafka-streams            {:mvn/version "2.1.0"}
+             org.apache.kafka/kafka-streams-test-utils {:mvn/version "2.1.0"}
+             spootnik/kinsky                           {:mvn/version "0.1.23"}
+             fundingcircle/jackdaw                     {:mvn/version "0.6.4"
+                                                        :exclusions  [org.slf4j/slf4j-log4j12 log4j/log4j]}
+
+             byte-streams/byte-streams                 {:mvn/version "0.2.4"}
+
+             cambium/cambium.core           {:mvn/version "1.0.0"}
+             cambium/cambium.codec-cheshire {:mvn/version "1.0.0"}
+
+             }
+ :aliases   {:dev  {:extra-paths ["script"]
+                    :extra-deps  {vvvvalvalval/scope-capture {:mvn/version "0.3.2"}}}
+             :test {:extra-paths ["test"]
+                    :extra-deps  {org.clojure/test.check {:mvn/version "0.10.0"}
+                                  metosin/testit         {:mvn/version "0.4.0"}
+                                  lambdaisland/kaocha    {:mvn/version "0.0-418"}}}}}
+
