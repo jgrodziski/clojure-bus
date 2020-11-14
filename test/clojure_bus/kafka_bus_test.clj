@@ -1,4 +1,4 @@
-(ns kafka-bus.kafka-bus-test
+(ns clojure-bus.kafka-bus-test
   (:require [clojure.spec.alpha :as s]
             [clojure.spec.gen.alpha :as gen]
             [clojure.test :refer [deftest assert-expr is do-report testing]]
@@ -15,13 +15,13 @@
             [tick.alpha.api :as t]
 
 
-            [kafka-bus.log :as log :refer [info debug]]
-            [kafka-bus.domain :refer [EventBus publish! subscribe defevent event-meta-gen]]
-            [kafka-bus.async-test-utils]
-            [kafka-bus.kafka :as k]
-            [kafka-bus.kafka-manager :as km]
-            [kafka-bus.kafka-bus :as kb]
-            [kafka-bus.time :as time]
+            [clojure-bus.log :as log :refer [info debug]]
+            [clojure-bus.domain :refer [EventBus publish! subscribe defevent event-meta-gen]]
+            [clojure-bus.async-test-utils]
+            [clojure-bus.kafka :as k]
+            [clojure-bus.kafka-manager :as km]
+            [clojure-bus.kafka-bus :as kb]
+            [clojure-bus.time :as time]
             )
   (:import [java.util Properties]
            [org.apache.kafka.streams TopologyTestDriver]))

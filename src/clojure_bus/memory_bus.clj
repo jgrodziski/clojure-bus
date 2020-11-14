@@ -1,8 +1,8 @@
-(ns kafka-bus.memory-bus
+(ns clojure-bus.memory-bus
   (:require [manifold.stream :as s :refer [consume]]
             [manifold.bus :as b]
-            [kafka-bus.log :as log]
-            [kafka-bus.domain :refer [EventBus
+            [clojure-bus.log :as log]
+            [clojure-bus.domain :refer [EventBus
                                       publish!
                                       subscribe]]))
 

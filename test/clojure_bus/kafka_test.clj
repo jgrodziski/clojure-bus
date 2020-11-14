@@ -1,13 +1,13 @@
-(ns kafka-bus.kafka-test
+(ns clojure-bus.kafka-test
   (:require [clojure.spec.alpha :as s]
             [clojure.spec.gen.alpha :as gen]
             [clojure.test :as t :refer [deftest testing]]
             [testit.core :refer [fact]]
-            [kafka-bus.time :as time]
+            [clojure-bus.time :as time]
 
-            [kafka-bus.domain :refer [defevent]]
-            [kafka-bus.json :as json]
-            [kafka-bus.kafka :as k]))
+            [clojure-bus.domain :refer [defevent]]
+            [clojure-bus.json :as json]
+            [clojure-bus.kafka :as k]))
 
 (s/def ::org-id uuid?) ;(s/and string? #(<= (count %) 16) not-empty))
 (s/def ::org-name string?)

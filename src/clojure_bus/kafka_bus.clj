@@ -1,11 +1,11 @@
-(ns kafka-bus.kafka-bus
+(ns clojure-bus.kafka-bus
   (:require
    [jackdaw.streams :as js]
 
-   [kafka-bus.log :as log]
-   [kafka-bus.bus :refer [EventBus subscribe publish!]]
-   [kafka-bus.kafka-manager :as km]
-   [kafka-bus.kafka :as k]))
+   [clojure-bus.log :as log]
+   [clojure-bus.bus :refer [EventBus subscribe publish!]]
+   [clojure-bus.kafka-manager :as km]
+   [clojure-bus.kafka :as k]))
 
 (defrecord KafkaEventBus [name producer-conf prod-topic-conf consumer-conf consumer-topics-conf key-extract-fn streams-store]
   EventBus

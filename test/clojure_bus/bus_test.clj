@@ -1,4 +1,4 @@
-(ns electre.common.infra.bus-test
+(ns clojure-bus.bus-test
   (:require  [clojure.test :as t :refer [deftest testing]]
              [clojure.spec.alpha :as s]
              [clojure.spec.gen.alpha :as gen]
@@ -6,13 +6,13 @@
              [jackdaw.streams :as js]
              [manifold.stream :as manifold]
 
-             [kafka-bus.log :refer [info]]
-             [kafka-bus.multicast-bus :refer [multicast-event-bus connect]]
-             [kafka-bus.domain :refer [defevent subscribe publish!]]
-             [kafka-bus.kafka :as k]
-             [kafka-bus.async-test-utils :refer :all]
-             [kafka-bus.kafka-bus :refer [kafka-event-bus]]
-             [kafka-bus.memory-bus :refer [in-memory-event-bus]]
+             [clojure-bus.log :refer [info]]
+             [clojure-bus.multicast-bus :refer [multicast-event-bus connect]]
+             [clojure-bus.domain :refer [defevent subscribe publish!]]
+             [clojure-bus.kafka :as k]
+             [clojure-bus.async-test-utils :refer :all]
+             [clojure-bus.kafka-bus :refer [kafka-event-bus]]
+             [clojure-bus.memory-bus :refer [in-memory-event-bus]]
              ))
 
 (def app-config {"application.id"            "common-infra-kafka-test"

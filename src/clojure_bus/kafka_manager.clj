@@ -1,12 +1,12 @@
-(ns kafka-bus.kafka-manager
+(ns clojure-bus.kafka-manager
   (:require
    [jackdaw.admin :as ja]
    [jackdaw.client :as jc]
    [jackdaw.client.log :as jcl]
    [jackdaw.serdes.edn :as jse]
 
-   [kafka-bus.kafka :as k]
-   [kafka-bus.log :as log]
+   [clojure-bus.kafka :as k]
+   [clojure-bus.log :as log]
    )
   (:import
    (org.apache.kafka.clients.consumer Consumer)

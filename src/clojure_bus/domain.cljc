@@ -1,4 +1,4 @@
-(ns kafka-bus.domain
+(ns clojure-bus.domain
   (:require [#?(:clj  clojure.spec.gen.alpha
                 :cljs cljs.spec.gen.alpha) :as gen]
             [#?(:clj  clojure.spec.alpha
@@ -6,8 +6,8 @@
             [clojure.test.check.generators :as check-gen]
             [tick.alpha.api :as t]
 
-            [kafka-bus.time :as time]
-            [kafka-bus.uuid :as uuid]
+            [clojure-bus.time :as time]
+            [clojure-bus.uuid :as uuid]
             )
   #?(:clj (:import [java.time Instant ZonedDateTime OffsetDateTime LocalDateTime LocalDate LocalTime ZoneId ZoneOffset Duration Period]))
 

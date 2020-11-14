@@ -1,4 +1,4 @@
-(ns kafka-bus.bus)
+(ns clojure-bus.bus)
 
 (defprotocol EventBus
   "A simple pub/sub interface for publishing event indexed with key k (the key value must be extracted from the event and is up to the implementation, this ensure homogeneity of the key extraction from the event)"

@@ -1,4 +1,4 @@
-(ns kafka-bus.async-test-utils
+(ns clojure-bus.async-test-utils
   (:require [clojure.test :refer [deftest assert-expr is do-report testing]]))
 
 (defmethod assert-expr 'eventually [_ form]

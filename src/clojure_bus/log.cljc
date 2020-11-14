@@ -1,4 +1,4 @@
-(ns kafka-bus.log
+(ns clojure-bus.log
   (:require
    #?(:clj [cambium.core :as log])))
 

@@ -1,4 +1,4 @@
-(ns kafka-bus.uuid
+(ns clojure-bus.uuid
   #?(:cljs (:require [cljs-uuid-utils.core :as uuid]))
   #?(:clj (:import (java.util UUID))))
 
